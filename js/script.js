@@ -30,8 +30,8 @@ $(document).ready(function() {
   $("#submit").on('click', (e) => {
     e.preventDefault();
     let name = $('.contactform_name').val();
-        phone = $('.contactform_phone').val(),
-        mail = $('.contactform_mail').val(),
+        phone = $('.contactform_phone.form-control').val(),
+        mail = $('.contactform_mail.form-control').val(),
         text = $('textarea').val();
     $.ajax({
      url: "server.php",
